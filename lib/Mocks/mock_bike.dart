@@ -4,7 +4,7 @@ final MOCK_BIKES = [
   Bike(
     codigo: 3187,
     nome: 'BICICLETA GTS ARO 29',
-    preco: 204500.00,
+    preco: 25.00,
     genero: 'Unissex',
     suspensao: 'Dianteria',
     tamanho: '17, 19 e 21',
@@ -20,7 +20,7 @@ final MOCK_BIKES = [
     codigo: 1959,
     nome: 'BICICLETA GTS ARO 29',
     genero: 'Unissex',
-    preco: 500.00,
+    preco: 15.00,
     suspensao: 'Dianteria',
     tamanho: '17, 19 e 21',
     indicacao: 'Dia-a-dia e Lazer',
@@ -34,7 +34,7 @@ final MOCK_BIKES = [
   Bike(
     codigo: 3301,
     nome: 'BICICLETA 29 GTS LEXXUS 24',
-    preco: 10500.00,
+    preco: 30.00,
     genero: 'Unissex',
     suspensao: 'Dianteria',
     tamanho: '19',
@@ -49,7 +49,7 @@ final MOCK_BIKES = [
   Bike(
     codigo: 3301,
     nome: 'BICICLETA 29 GTS LEXXUS 24',
-    preco: 2500.00,
+    preco: 27.00,
     genero: 'Unissex',
     suspensao: 'Dianteria',
     tamanho: '19',
