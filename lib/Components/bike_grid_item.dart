@@ -40,7 +40,7 @@ class BikeGridItem extends StatelessWidget {
                   builder: (BuildContext context) {
                     return AlertDialog(
                       title: Text("${bike.nome}"),
-                      content: Text(cartProvider.checarCarrinhoCart(bike, cartProvider.addBike)),
+                      content: Text(cartProvider.checarCarrinhoCart(bike)),
                       actions: <Widget>[
                         ElevatedButton(
                             onPressed: () {

@@ -4,6 +4,7 @@ import 'package:mvp_app_aluguel_bikes/Providers/cart_item.dart';
 import 'package:provider/provider.dart';
 
 
+
 class CartDetailScreen extends StatelessWidget {
   
   @override
@@ -40,7 +41,8 @@ class CartDetailScreen extends StatelessWidget {
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.black87)
                 ),
-                onPressed: (){},
+                onPressed: () {},
+
                 icon: Icon(Icons.payment),
                 label: Text('O Aluguel para ${cartProvider.total} bikes é de R\$ '
                     '${cartProvider.somaTotal.toStringAsFixed(2)}')

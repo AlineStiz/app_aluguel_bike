@@ -15,20 +15,21 @@ class CartItem with ChangeNotifier {
     notifyListeners();
   }
 
+  checarCarrinhoCart(Bike bike) {
+
+    if (_bikes.contains(bike)) {
+      checar = "Você já adicionou esse item ao seu carrinho, LIMITE 1 UNIDADE!! ";
+    } else{
+      addBike(bike);
+      checar = "Item adicionado com Sucesso!!";
+
+    }
+    return checar;
+  }
+
   void removeBike(Bike bike) {
     _bikes.remove(bike);
     notifyListeners();
-  }
-
-  checarCarrinhoCart(Bike bike, Function addBike) {
-
-    if (!_bikes.contains(bike)) {
-      addBike(bike);
-      checar = "Item adicionado com Sucesso!!";
-    } else{
-      checar = "Você já adicionou esse item ao seu carrinho, LIMITE 1 UNIDADE!! ";
-    }
-      return checar;
   }
 
   void sumPrince(Bike bike) {
@@ -40,4 +41,6 @@ class CartItem with ChangeNotifier {
     somaTotal -= bike.preco;
     notifyListeners();
   }
+
+
 }

@@ -65,7 +65,7 @@ class BikeDetailsScreen extends StatelessWidget {
                       builder: (BuildContext context) {
                         return AlertDialog(
                           title: Text("${bike.nome}"),
-                          content: Text(cartProvider.checarCarrinhoCart(bike, cartProvider.addBike)),
+                          content: Text(cartProvider.checarCarrinhoCart(bike)),
                           actions: <Widget>[
                             ElevatedButton(
                                 onPressed: () {
@@ -76,11 +76,11 @@ class BikeDetailsScreen extends StatelessWidget {
                         );
                       });
 
-
                   cartProvider.sumPrince(bike);
                 },
                 icon: Icon(Icons.add_shopping_cart_sharp),
                 label: Text('Alugar Bike')),
+
             ElevatedButton.icon(
                 style: ButtonStyle(
                     backgroundColor:
